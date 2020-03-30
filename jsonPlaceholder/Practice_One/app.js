@@ -22,7 +22,7 @@ getUsers()
 
 // Object to store dom elements
 const DOM = {
-    'greeting' : document.querySelector('.greeting'),
+    'greeting' : document.querySelector('.nav__welcome-msg'),
 }
 
 // TEST

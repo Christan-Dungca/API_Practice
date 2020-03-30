@@ -1,0 +1,50 @@
+// Resets 
+
+*, 
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+// Navigation
+
+.nav {
+    padding: 2rem;
+    height: 5rem;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    align-content: center;
+}
+
+.nav__welcome-msg {
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+.nav__navigation {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;;
+    list-style: none;
+    background-color: orchid;
+
+    &__link {
+
+    }
+}
