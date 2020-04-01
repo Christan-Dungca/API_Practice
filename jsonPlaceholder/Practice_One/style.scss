@@ -23,7 +23,7 @@ body {
 .nav {
     padding: 2rem;
     height: 5rem;
-    background-color: orange;
+    // background-color: orange;
     display: grid;
     grid-template-columns: 70% 1fr;
     align-content: center;
@@ -42,9 +42,42 @@ body {
     justify-content: space-between;
     align-items: center;;
     list-style: none;
-    background-color: orchid;
+    // background-color: orchid;
 
     &__link {
 
     }
 }
+
+// .main {
+//     // visually
+//     background-color: rgb(175, 87, 56);
+//     // dimension
+//     min-height: 100%;
+//     width: 100%;
+//     // grid properties
+//     display: flex;
+//     padding: 0 10% 0 10%;
+// }
+
+// .dashboard {
+//     min-height: 100vh;
+//     width: 75%;
+//     margin-right: 3rem;
+//     background-color: green;
+// }
+
+// .user-section {
+//     min-height: 100vh;
+//     width: 22%;
+//     background-color: slateblue;
+// }
+
+// .form {
+//     width: 100%;
+//     height: 8rem;
+
+//     & input { 
+//         display: block;
+//     }
+// }

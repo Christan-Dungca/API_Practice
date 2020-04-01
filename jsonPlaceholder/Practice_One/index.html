@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Json Placeholder Practice #1 </title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
     <nav class="nav">
@@ -13,8 +13,38 @@
             <li class="navigation__link"> Home </li>
             <li class="navigation__link"> Messages </li>
             <li class="navigation__link"> Settings </li>
-        </ul>
-    </nav>
+        </ul> 
+    </nav> 
+
+    <div class="main">
+
+        <div class="dashboard"> 
+            <div class="post">
+                <div class="post__username"></div>
+                <div class="post__title"></div>
+                <div class="post__image"></div>
+                <div class="post__options"></div>
+            </div>
+        </div>
+
+        <div class="user-section">
+ 
+            <form method='post' class="form" id="form__add-user">
+                <h5> Create a discussion</h5> 
+                <input type="text" id="form--name" placeholder="name">
+                <input type="text" id="form--body" placeholder="body">
+                <input type="text" id="form--id" placeholder="id">
+                <button>submit</button>
+            </form>
+        </div>
+
+    </div>
+
+    
 </body>
 <script src="./app.js"></script>
 </html>
+
+<!-- pretend like you are one of the users -->
+<!-- get list of all the users -->
+<!-- have an option to add a friend to your list -->

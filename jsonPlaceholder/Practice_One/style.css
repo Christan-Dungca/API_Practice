@@ -16,7 +16,6 @@ html {
 .nav {
   padding: 2rem;
   height: 5rem;
-  background-color: orange;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 70% 1fr;
@@ -46,6 +45,5 @@ html {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  background-color: orchid;
 }
 /*# sourceMappingURL=style.css.map */
