@@ -1,5 +1,5 @@
 
-/* GET REQUEST */
+/* GET REQUEST -- getting data response from api*/
 
 async function getUsers() {
     try {
@@ -33,6 +33,9 @@ document.querySelector('.form').addEventListener('submit', (e) => {
 })
 
 const createrResource = async (title, body, userId) => {
+    
+    // parameters for the post request 
+
     const url = 'https://jsonplaceholder.typicode.com/posts'; 
     const settings = {
         method: 'POST',
@@ -46,12 +49,17 @@ const createrResource = async (title, body, userId) => {
         }
     };
 
+    // making the post request 
     try {
         const fetchResponse = await fetch(url, settings);
         const data = await fetchResponse.json();
         console.log(data);
 
-        return data;
+        /* getting the dashboard element and adding the post information */
+        const dashboard = document.querySelector('.dashboard');
+        const { title, body, userId } = {...data};
+        const markup = `title: ${title} -- body: ${body} -- id : ${userId}`;
+        dashboard.insertAdjacentHTML('afterbegin', markup);
     } catch (error) {
         console.log(error);
     }
