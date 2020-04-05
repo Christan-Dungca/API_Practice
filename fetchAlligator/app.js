@@ -13,7 +13,7 @@ const myPost = {
     title: 'kimi no na wa',
     body: 'a beautiful animated movie which is full of suspense, romance and mystery',
     userId: 1
-}
+};
 
 const options = {
     method: 'POST',
@@ -27,6 +27,55 @@ fetch('https://jsonplaceholder.typicode.com/posts', options)
 .then(res => res.json())
 .then(json => console.log('New Post: ', json));
 
+//  UPDATE a resource using PUT
+const updatePost = {
+    id: 1,
+    title: 'foo',
+    body: 'bar',
+    userId: 1
+}
+
+const updateOptions = {
+    method: 'PUT',
+    body: JSON.stringify(updatePost),
+    headers: {
+        'Content-type': 'application/json'
+    }
+}
+
+fetch('https://jsonplaceholder.typicode.com/posts/1', updateOptions)
+.then(res => {
+    if (res.ok){
+        return res.json()
+    } else {
+        return Promise.reject()
+    }
+})
+.then(json => console.log(json));
+
+// UPDATE a resource using PATCH
+const updatePostPatch = {
+    title: 'bar'
+}
+
+const updateOptionsPatch = {
+    method: 'PATCH',
+    body: JSON.stringify(updatePostPatch),
+    headers: {
+        'Content-type': 'application/json'
+    }
+}
+
+fetch('https://jsonplaceholder.typicode.com/posts/1', updateOptionsPatch)
+.then(res => res.json())
+.then(res => console.log(res))
+
+//  DELETE a resource
+fetch('https://jsonplaceholder.typicode.com/posts/1', {
+    method: 'DELETE'
+})
+.then(res => res.json())
+.then(res => console.log(res))
 
 /* Error handling with fetch using .ok() and return Promise.reject(reason)
 
