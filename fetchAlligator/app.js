@@ -158,3 +158,6 @@ const deletePost = async (postNum) => {
 }
 
 deletePost(100);
+
+// FILTERED DATA
+
