@@ -115,7 +115,7 @@ body {
 .header {
   margin: 0 10%;
   width: 80%;
-  height: 90rem;
+  height: 70rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,8 +125,8 @@ body {
 
 .main-article {
   width: 55%;
-  height: 68%;
-  border-radius: 4px;
+  height: 88%;
+  border-radius: 1rem;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,9 +142,11 @@ body {
 .main-article__img {
   width: 100%;
   height: 35rem;
+  border-radius: 1rem;
   -ms-grid-column-align: start;
       justify-self: start;
   margin-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .main-article__link {
@@ -239,5 +241,70 @@ body {
   color: #2556fc;
   text-underline-position: under;
   font-size: 1.4rem;
+}
+
+.new-blogs {
+  padding-left: 10%;
+  padding-top: 4rem;
+  height: 70vh;
+}
+
+.new-blogs__title {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 4rem;
+}
+
+.new-blog {
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.new-blog img {
+  width: 20rem;
+  height: 18rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.new-blog__info {
+  width: 20rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (min-content)[3];
+      grid-template-rows: repeat(3, -webkit-min-content);
+      grid-template-rows: repeat(3, min-content);
+  grid-gap: 1rem;
+}
+
+.new-blog__type {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #2556fc;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.new-blog__title {
+  font-size: 1.5rem;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.new-blog__link {
+  font-size: 1.2rem;
+  text-underline-position: under;
+  color: #000;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
 }
 /*# sourceMappingURL=style.css.map */

@@ -92,7 +92,7 @@ $color-report: #e1878e;
 .header {
     margin: 0 10%;
     width: 80%;
-    height: 90rem;
+    height: 70rem;
     // background-color: rgb(228, 228, 228);
 
     display: flex;
@@ -101,8 +101,8 @@ $color-report: #e1878e;
 
 .main-article {
     width: 55%;
-    height: 68%;
-    border-radius: 4px;
+    height: 88%;
+    border-radius: 1rem;
     overflow: hidden;
     
     display: flex;
@@ -113,8 +113,10 @@ $color-report: #e1878e;
     &__img {
        width: 100%;
        height: 35rem;
+       border-radius: 1rem;
        justify-self: start;
        margin-bottom: 1.5rem;
+       overflow: hidden;
     }
 
     &__link {
@@ -122,7 +124,6 @@ $color-report: #e1878e;
         font-weight: 300;
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
-
     }
 
     &__title {
@@ -200,5 +201,66 @@ $color-report: #e1878e;
         font-size: 1.4rem;
      }
 }
+
+
+.new-blogs {
+    // background-color: $color-report;
+    padding-left: 10%;
+    padding-top: 4rem;
+    height: 70vh;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+        padding-bottom: 4rem;
+    }
+}
+
+.new-blog {
+
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 20rem;
+        height: 18rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    &__info {
+        width: 20rem;
+
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+        grid-gap: 1rem;
+    }
+
+    &__type {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: $color-facebook-blue;
+        grid-row: 1 / 2;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        grid-row: 2 / 3;
+    }
+
+    &__link {
+        font-size: 1.2rem;
+        text-underline-position: under;
+        color: #000;
+        grid-row: 3 / 4;
+    }
+}
+
+
+
+
+
+
 
 
